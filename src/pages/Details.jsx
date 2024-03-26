@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { getDataFromLocalStorage, saveToLocalStorage } from '../utlies/LocalStorage'
+import { deleteFromLocalStorage, getDataFromLocalStorage, saveToLocalStorage } from '../utlies/LocalStorage'
 import { toast } from 'react-toastify'
 
 function Details() {
@@ -21,6 +21,7 @@ function Details() {
 
     const handelReadData = () => {
         saveToLocalStorage('read', details);
+        deleteFromLocalStorage('wish',details.id)
         if (!readData.some(item => item.id === details.id)) {
             setReadData(prevReadData => [...prevReadData, details]);
             toast("Read data added");
@@ -31,6 +32,7 @@ function Details() {
 
     const handelWishData = () => {
         if (!readData.some(item => item.id === details.id)) {
+            saveToLocalStorage('wish', details);
             if (!wishData.some(item => item.id === details.id)) {
                 setWishData(prevWishData => [...prevWishData, details]);
                 toast("Wish data added");

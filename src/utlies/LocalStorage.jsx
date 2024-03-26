@@ -15,3 +15,10 @@ export const getDataFromLocalStorage = (name) => {
         return JSON.parse(localStorage.getItem(`wish`) || "[]");
     }
 }
+
+
+export const deleteFromLocalStorage = (name, id) => {
+    let saveData = JSON.parse(localStorage.getItem(`${name}`) || "[]");
+    saveData = saveData.filter(item => item.id!== id);
+    localStorage.setItem(`${name}`, JSON.stringify(saveData));
+}
