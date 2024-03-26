@@ -1,10 +1,38 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import Root from './components/Root.jsx';
+import ErrorPage from './components/ErrorPage.jsx';
+import Home from './pages/Home.jsx'
+import PageToRead from './pages/PageToRead.jsx'
+import ListedBook from './pages/ListedBook.jsx'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children:[
+      {
+        path:'/',
+        element:<Home/>
+      },
+      {
+        path:'/pageToRead',
+        element:<PageToRead />
+      },
+      {
+        path:'/listedBook',
+        element:<ListedBook/>
+      }
+    ]
+  },
+]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <RouterProvider router={router} />
+</React.StrictMode>
 )
