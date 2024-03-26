@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { saveToLocalStorage } from '../utlies/LocalStorage'
 
 function Details() {
     const { id } = useParams()
@@ -51,8 +52,8 @@ function Details() {
                 </div>
 
                 <div className="btnsec flex gap-5 mt-5">
-                    <button className='px-4 py-2 rounded-xl border-2'>Read</button>
-                    <button className='px-4 py-2 rounded-xl bg-[#50B1C9] text-white'>Wishlist</button>
+                    <button onClick={() => saveToLocalStorage('read', details)} className='px-4 py-2 rounded-xl border-2'>Read</button>
+                    <button onClick={() => saveToLocalStorage('wish', details)} className='px-4 py-2 rounded-xl bg-[#50B1C9] text-white'>Wishlist</button>
                 </div>
             </div>
         </div>
