@@ -1,16 +1,48 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { saveToLocalStorage } from '../utlies/LocalStorage'
+import { getDataFromLocalStorage, saveToLocalStorage } from '../utlies/LocalStorage'
+import { toast } from 'react-toastify'
 
 function Details() {
     const { id } = useParams()
     const [details, setDetails] = useState({})
+    const [readData, setReadData] = useState([])
+    const [wishData, setWishData] = useState([])
 
     useEffect(() => {
         fetch('../public/Book.json')
             .then(res => res.json())
             .then(res => setDetails(res.find(i => i.id === parseInt(id))))
+        const Rdata = getDataFromLocalStorage("read");
+        setReadData(Rdata)
+        const Wdata = getDataFromLocalStorage("wish");
+        setWishData(Wdata)
     }, [id])
+
+    const handelReadData = () => {
+        saveToLocalStorage('read', details);
+        if (!readData.some(item => item.id === details.id)) {
+            setReadData(prevReadData => [...prevReadData, details]);
+            toast("Read data added");
+        } else {
+            toast("Read Data already exists");
+        }
+    };
+
+    const handelWishData = () => {
+        if (!readData.some(item => item.id === details.id)) {
+            if (!wishData.some(item => item.id === details.id)) {
+                setWishData(prevWishData => [...prevWishData, details]);
+                toast("Wish data added");
+            } else {
+                toast("Wish Data already exists");
+            }
+        } else {
+            toast("Data already exists in Read List");
+        }
+    };
+
+
 
     return (
         <div className='flex md:flex-row flex-col items-center mx-[15%] justify-center mt-10' key={details.id}>
@@ -52,8 +84,8 @@ function Details() {
                 </div>
 
                 <div className="btnsec flex gap-5 mt-5">
-                    <button onClick={() => saveToLocalStorage('read', details)} className='px-4 py-2 rounded-xl border-2'>Read</button>
-                    <button onClick={() => saveToLocalStorage('wish', details)} className='px-4 py-2 rounded-xl bg-[#50B1C9] text-white'>Wishlist</button>
+                    <button onClick={() => handelReadData()} className='px-4 py-2 rounded-xl border-2'>Read</button>
+                    <button onClick={() => handelWishData()} className='px-4 py-2 rounded-xl bg-[#50B1C9] text-white'>Wishlist</button>
                 </div>
             </div>
         </div>

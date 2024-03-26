@@ -7,8 +7,8 @@ function ListedBook() {
   const [readData, setReadData] = useState([]);
   const [wishData, setWishData] = useState([]);
 
-  console.log(readData);
-  console.log(wishData);
+  // console.log(readData);
+  // console.log(wishData);
 
 
   useEffect(() => {

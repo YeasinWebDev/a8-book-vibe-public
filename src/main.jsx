@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './components/Root.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
 import Home from './pages/Home.jsx'
@@ -9,36 +9,40 @@ import PageToRead from './pages/PageToRead.jsx'
 import ListedBook from './pages/ListedBook.jsx'
 import Details from './pages/Details.jsx';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-    children:[
+    children: [
       {
-        path:'/',
-        element:<Home/>
+        path: '/',
+        element: <Home />
       },
       {
-        path:'/pageToRead',
-        element:<PageToRead />
+        path: '/pageToRead',
+        element: <PageToRead />
       },
       {
-        path:'/listedBook',
-        element:<ListedBook/>
+        path: '/listedBook',
+        element: <ListedBook />
       },
       {
-        path:'/details/:id',
-        element:<Details/>
+        path: '/details/:id',
+        element: <Details />
       }
     ]
   }
-  
+
 ]);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <RouterProvider router={router} />
-</React.StrictMode>
+    <RouterProvider router={router} />
+    <ToastContainer />
+  </React.StrictMode>
 )
