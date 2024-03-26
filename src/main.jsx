@@ -7,6 +7,7 @@ import ErrorPage from './components/ErrorPage.jsx';
 import Home from './pages/Home.jsx'
 import PageToRead from './pages/PageToRead.jsx'
 import ListedBook from './pages/ListedBook.jsx'
+import Details from './pages/Details.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,9 +26,14 @@ const router = createBrowserRouter([
       {
         path:'/listedBook',
         element:<ListedBook/>
+      },
+      {
+        path:'/details/:id',
+        element:<Details/>
       }
     ]
-  },
+  }
+  
 ]);
 
 
