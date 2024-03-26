@@ -4,16 +4,15 @@ import { useParams } from 'react-router-dom'
 function Details() {
     const { id } = useParams()
     const [details, setDetails] = useState({})
-    console.log(details);
 
     useEffect(() => {
         fetch('../public/Book.json')
             .then(res => res.json())
-            .then(res => setDetails(res.find(i => i.Id === parseInt(id))))
+            .then(res => setDetails(res.find(i => i.id === parseInt(id))))
     }, [id])
 
     return (
-        <div className='flex md:flex-row flex-col items-center mx-[15%] justify-center mt-10'>
+        <div className='flex md:flex-row flex-col items-center mx-[15%] justify-center mt-10' key={details.id}>
             <div className="img md:w-[200vh] flex items-center">
                 <img src={details.image} alt="" />
             </div>

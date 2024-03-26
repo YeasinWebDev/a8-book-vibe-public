@@ -11,7 +11,7 @@ function ProductSec({ data }) {
                 {
                     data?.map((item, index) => {
                         return (
-                            <NavLink to={`/details/${item.Id}`}>
+                            <NavLink to={`/details/${item.id}`}>
                                 <div className="card lg:w-96 w-80 shadow-xl" key={index}>
                                     <div className="px-10 pt-10 flex items-center justify-center">
                                         <img src={item.image} alt="Shoes" className="rounded-xl md:w-[18vw] md:h-[18vw] w-[35vw] h-[35vw]  object-cover" />

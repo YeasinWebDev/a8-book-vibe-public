@@ -1,6 +1,6 @@
  [
       {
-        "Id": 1,
+        "id": 1,
         "bookName": "The Silent Patient",
         "author": "Alex Michaelides",
         "image": "https://bookbins.in/wp-content/uploads/2021/05/The-Silent-Patient-Alex-Michaelides-Buy-Online-Bookbins-1.png",
@@ -13,7 +13,7 @@
         "yearOfPublishing": 2019
       },
       {
-        "Id": 2,
+        "id": 2,
         "bookName": "The Night Circus",
         "author": "Erin Morgenstern",
         "image": "https://www.bigw.com.au/medias/sys_master/images/images/h5f/hf9/34526163763230.jpg",
@@ -26,7 +26,7 @@
         "yearOfPublishing": 2011
       },
       {
-        "Id": 3,
+        "id": 3,
         "bookName": "Educated",
         "author": "Tara Westover",
         "image": "https://update.lib.berkeley.edu/wp-content/uploads/2019/05/educated.png",
@@ -39,7 +39,7 @@
         "yearOfPublishing": 2018
       },
       {
-        "Id": 4,
+        "id": 4,
         "bookName": "The Alchemist",
         "author": "Paulo Coelho",
         "image": "https://images.blinkist.io/images/books/63c6cd1f3784800008d66c09/1_1/470.jpg",
@@ -52,7 +52,7 @@
         "yearOfPublishing": 1988
       },
       {
-        "Id": 5,
+        "id": 5,
         "bookName": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "image": "https://images-na.ssl-images-amazon.com/images/I/61z0MrB6qOS._AC_UL600_SR600,600_.jpg",
@@ -65,7 +65,7 @@
         "yearOfPublishing": 1925
       },
       {
-        "Id": 6,
+        "id": 6,
         "bookName": "The Hunger Games",
         "author": "Suzanne Collins",
         "image": "https://res.cloudinary.com/pangea-prod/image/upload/w_620,c_limit,q_auto:good/v1573843662/production/aXRlbV92YXJpYW50/Nzo5NzgwNTQ1NjcwMzE5OmltYWdlOmVuLUNBOnByaW1hcnk.png",
