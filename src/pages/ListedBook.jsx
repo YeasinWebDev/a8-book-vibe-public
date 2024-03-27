@@ -60,8 +60,8 @@ function ListedBook() {
       </div>
 
       <div className=" flex gap-5 mt-5">
-        <a rel="noopener noreferrer" onClick={() => setNav(!nav)} href="#" className={`${nav ? "flex flex-shrink-0 px-5 py-2 border-b-4 dark:border-green-300 dark:text-green-600" : "px-5 py-2"}`}>Read Books</a>
-        <a rel="noopener noreferrer" onClick={() => setNav(!nav)} href="#" className={`${!nav ? "flex flex-shrink-0 px-5 py-2 border-b-4 dark:border-green-300 dark:text-green-600" : "px-5 py-2"}`}>Wishlist Books</a>
+        <a rel="noopener noreferrer" onClick={() => setNav(!nav)} href="#" className={`${nav ? "flex  text-xl flex-shrink-0 px-5 py-2 border-b-4 dark:border-green-300 dark:text-green-600" : "px-5 py-2 text-xl"}`}>Read Books</a>
+        <a rel="noopener noreferrer" onClick={() => setNav(!nav)} href="#" className={`${!nav ? "flex  text-xl flex-shrink-0 px-5 py-2 border-b-4 dark:border-green-300 dark:text-green-600" : "px-5 py-2 text-xl"}`}>Wishlist Books</a>
       </div>
 
       {

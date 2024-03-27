@@ -11,7 +11,7 @@ function Author() {
 
     return (
         <div>
-            <h1 className='flex items-center justify-center text-2xl font-semibold mt-10'>Our Authors</h1>
+            <h1 className='flex items-center justify-center text-3xl font-semibold mt-10'>Our Authors</h1>
             <div className=' md:px-20 px-2'>
                 {
                     authorData.map(author => {
