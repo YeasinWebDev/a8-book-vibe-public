@@ -11,6 +11,8 @@ import Details from './pages/Details.jsx';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Contact from './pages/Contact.jsx';
+import Author from './pages/Author.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,13 @@ const router = createBrowserRouter([
       {
         path: '/details/:id',
         element: <Details />
+      },{
+        path: '/contact',
+        element: <Contact />
+      }
+      ,{
+        path: '/author',
+        element: <Author />
       }
     ]
   }

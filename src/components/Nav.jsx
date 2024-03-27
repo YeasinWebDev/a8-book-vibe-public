@@ -14,16 +14,20 @@ function Nav() {
                             <NavLink to='/' className={({ isActive }) => `font-bold text-2xl px-2 py-3 ${isActive ? "text-green-600 rounded-xl border-2 border-green-600" : ""}`}>Home</NavLink>
                             <NavLink to='/listedBook' className={({ isActive }) => `font-bold text-2xl px-2 py-3 ${isActive ? "text-green-600 rounded-xl border-2 border-green-600" : ""}`}>Listed Books</NavLink>
                             <NavLink to='/pageToRead' className={({ isActive }) => `font-bold text-2xl px-2 py-3 ${isActive ? "text-green-600 rounded-xl border-2 border-green-600" : ""}`}>Page to Read</NavLink>
+                            <NavLink to='/author' className={({ isActive }) => `font-bold text-2xl px-2 py-3 ${isActive ? "text-green-600 rounded-xl border-2 border-green-600" : ""}`}>Authors</NavLink>
+                            <NavLink to='/contact' className={({ isActive }) => `font-bold text-2xl px-2 py-3 ${isActive ? "text-green-600 rounded-xl border-2 border-green-600" : ""}`}>Contact</NavLink>
 
                         </ul>
                     </div>
-                    <a className="text-xl font-semibold">Book House</a>
+                    <a className="md:text-3xl font-semibold text-xl">Book House</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-2">
                         <NavLink to='/' className={({ isActive }) => `font-bold text-2xl px-2 py-3 ${isActive ? "text-green-600 rounded-xl border-2 border-green-600" : ""}`}>Home</NavLink>
                         <NavLink to='/listedBook' className={({ isActive }) => `font-bold text-2xl px-2 py-3 ${isActive ? "text-green-600 rounded-xl border-2 border-green-600" : ""}`}>Listed Books</NavLink>
                         <NavLink to='/pageToRead' className={({ isActive }) => `font-bold text-2xl px-2 py-3 ${isActive ? "text-green-600 rounded-xl border-2 border-green-600" : ""}`}>Page to Read</NavLink>
+                        <NavLink to='/author' className={({ isActive }) => `font-bold text-2xl px-2 py-3 ${isActive ? "text-green-600 rounded-xl border-2 border-green-600" : ""}`}>Authors</NavLink>
+                        <NavLink to='/contact' className={({ isActive }) => `font-bold text-2xl px-2 py-3 ${isActive ? "text-green-600 rounded-xl border-2 border-green-600" : ""}`}>Contact</NavLink>
 
                     </ul>
                 </div>

@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 
 function Root() {
   return (
-    <div className='bg-white text-black w-full h-screen'>
+    <div className='bg-white text-black w-full min-h-screen'>
       <Nav/>
       <Outlet/>
     </div>

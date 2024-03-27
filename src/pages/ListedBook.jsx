@@ -7,8 +7,7 @@ function ListedBook() {
   const [readData, setReadData] = useState([]);
   const [wishData, setWishData] = useState([]);
 
-  // console.log(readData);
-  // console.log(wishData);
+  
 
 
   useEffect(() => {
@@ -24,7 +23,7 @@ function ListedBook() {
 
 
   return (
-    <div className='px-10 min-h-screen bg-white'>
+    <div className='md:px-10 px-5 min-h-screen bg-white'>
       <h1 className='font-bold md:text-2xl text-xl flex items-center justify-center bg-[#f3f3f3] py-5 mt-8 rounded-xl'>Books</h1>
 
 
@@ -33,9 +32,9 @@ function ListedBook() {
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn m-1 bg-[#23be0a] border-none hover:bg-[#23be0a] text-white">Sort By</div>
           <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-[#f3f3f3] text-black rounded-box w-52">
-            <li><a>Rating</a></li>
-            <li><a>Number of pages</a></li>
-            <li><a>Publisher year</a></li>
+            <li ><a> Rating </a></li>
+            <li><a> Number of pages </a></li>
+            <li><a> Publisher year </a></li>
           </ul>
         </div>
       </div>
@@ -46,7 +45,7 @@ function ListedBook() {
       </div>
 
       {
-        nav && <div className='mt-10 px-8'>
+        nav && <div className='mt-10 md:px-8 px-2'>
           {
             readData.map((item, index) => (
               <CommonData key={item.id} data={item} />
@@ -56,7 +55,7 @@ function ListedBook() {
       }
 
       {
-        !nav && <div className='mt-10 px-8'>
+        !nav && <div className='mt-10 md:px-8 px-2'>
           {
             wishData.map((item, index) => (
               <CommonData key={item.id} data={item} />

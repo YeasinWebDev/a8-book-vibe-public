@@ -85,7 +85,7 @@ function Details() {
                     </div>
                 </div>
 
-                <div className="btnsec flex gap-5 mt-5">
+                <div className="btnsec flex gap-5 my-5">
                     <button onClick={() => handelReadData()} className='px-4 py-2 rounded-xl border-2'>Read</button>
                     <button onClick={() => handelWishData()} className='px-4 py-2 rounded-xl bg-[#50B1C9] text-white'>Wishlist</button>
                 </div>

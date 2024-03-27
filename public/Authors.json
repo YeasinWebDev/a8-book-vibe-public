@@ -1,0 +1,131 @@
+[
+    {
+        "id": 1,
+        "name": "Agatha Christie",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-517399194.jpg?crop=1xw:1.0xh;center,top&resize=640:*",
+        "birthDate": "1890-09-15",
+        "deathDate": "1976-01-12",
+        "famousBooks": [
+            "Murder on the Orient Express",
+            "And Then There Were None",
+            "The Murder of Roger Ackroyd"
+        ],
+        "birthPlace": "Torquay, Devon, England"
+    },
+    {
+        "id": 2,
+        "name": "William Shakespeare",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFrQ13N6MUIdOV49-2og8tZVT53B8_eSgn0scZGAcD8g&s",
+        "birthDate": "1564-04-26",
+        "deathDate": "1616-04-23",
+        "famousBooks": [
+            "Romeo and Juliet",
+            "Hamlet",
+            "Macbeth"
+        ],
+        "birthPlace": "Stratford-upon-Avon, Warwickshire, England"
+    },
+    {
+        "id": 3,
+        "name": "Jane Austen",
+        "image": "https://static01.nyt.com/images/2019/12/08/books/review/08sutherland1/merlin_145397748_07cc4422-70a3-49b8-bcaa-b27df6162591-superJumbo.jpg",
+        "birthDate": "1775-12-16",
+        "deathDate": "1817-07-18",
+        "famousBooks": [
+            "Pride and Prejudice",
+            "Sense and Sensibility",
+            "Emma"
+        ],
+        "birthPlace": "Steventon, Hampshire, England"
+    },
+    {
+        "id": 4,
+        "name": "Mark Twain",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Mark_Twain_by_AF_Bradley.jpg",
+        "birthDate": "1835-11-30",
+        "deathDate": "1910-04-21",
+        "famousBooks": [
+            "The Adventures of Tom Sawyer",
+            "Adventures of Huckleberry Finn",
+            "The Prince and the Pauper"
+        ],
+        "birthPlace": "Florida, Missouri, United States"
+    },
+    {
+        "id": 5,
+        "name": "Emily Dickinson",
+        "image": "https://poets.org/sites/default/files/images/biographies/155_EmilyDickinsonSmall.jpg",
+        "birthDate": "1830-12-10",
+        "deathDate": "1886-05-15",
+        "famousBooks": [
+            "The Complete Poems of Emily Dickinson",
+            "Selected Poems of Emily Dickinson",
+            "The Collected Poems of Emily Dickinson"
+        ],
+        "birthPlace": "Amherst, Massachusetts, United States"
+    },
+    {
+        "id": 6,
+        "name": "Leo Tolstoy",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/leo-tolstoy.jpg",
+        "birthDate": "1828-09-09",
+        "deathDate": "1910-11-20",
+        "famousBooks": [
+            "War and Peace",
+            "Anna Karenina",
+            "The Death of Ivan Ilyich"
+        ],
+        "birthPlace": "Yasnaya Polyana, Tula Governorate, Russian Empire"
+    },
+    {
+        "id": 7,
+        "name": "Charles Dickens",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/english-novelist-charles-dickens-news-photo-1695141740.jpg?crop=1.00xw:0.783xh;0,0.0731xh&resize=640:*",
+        "birthDate": "1812-02-07",
+        "deathDate": "1870-06-09",
+        "famousBooks": [
+            "A Tale of Two Cities",
+            "Great Expectations",
+            "Oliver Twist"
+        ],
+        "birthPlace": "Portsmouth, England"
+    },
+    {
+        "id": 8,
+        "name": "Virginia Woolf",
+        "image": "https://cdn.britannica.com/82/138382-050-2E8FCB26/Virginia-Woolf.jpg",
+        "birthDate": "1882-01-25",
+        "deathDate": "1941-03-28",
+        "famousBooks": [
+            "Mrs. Dalloway",
+            "To the Lighthouse",
+            "Orlando"
+        ],
+        "birthPlace": "Kensington, London, England"
+    },
+    {
+        "id": 9,
+        "name": "Harper Lee",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-50358657.jpg",
+        "birthDate": "1926-04-28",
+        "deathDate": "2016-02-19",
+        "famousBooks": [
+            "To Kill a Mockingbird",
+            "Go Set a Watchman"
+        ],
+        "birthPlace": "Monroeville, Alabama, United States"
+    },
+    {
+        "id": 10,
+        "name": "Gabriel García Márquez",
+        "image": "https://thequeensreadingroom.co.uk/wp-content/uploads/2023/03/Gabriel-Garcia-Marquez.png",
+        "birthDate": "1927-03-06",
+        "deathDate": "2014-04-17",
+        "famousBooks": [
+            "One Hundred Years of Solitude",
+            "Love in the Time of Cholera",
+            "Chronicle of a Death Foretold"
+        ],
+        "birthPlace": "Aracataca, Magdalena, Colombia"
+    }
+]
