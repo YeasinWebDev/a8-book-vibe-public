@@ -5,7 +5,7 @@ import ProductSec from '../components/ProductSec'
 function Home() {
   const [data, setData] = useState([])
   useEffect(() => {
-    fetch('../public/Book.json')
+    fetch('../Book.json')
       .then(res => res.json())
       .then(res => setData(res))
   }, [])

@@ -4,7 +4,7 @@ function Author() {
     const [authorData, setAuthorData] = useState([])
 
     useEffect(() => {
-        fetch('../public/Authors.json')
+        fetch('./Authors.json')
             .then(res => res.json())
             .then(res => setAuthorData(res))
     }, [])

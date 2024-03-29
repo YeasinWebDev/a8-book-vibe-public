@@ -10,7 +10,7 @@ function Details() {
     const [wishData, setWishData] = useState([])
 
     useEffect(() => {
-        fetch('../public/Book.json')
+        fetch('../Book.json')
             .then(res => res.json())
             .then(res => setDetails(res.find(i => i.id === parseInt(id))))
         const Rdata = getDataFromLocalStorage("read");
